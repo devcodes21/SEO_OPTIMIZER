@@ -1,5 +1,4 @@
-# SEO_OPTIMIZER
-SEO Optimizer
+# SEO Optimizer
 A simple chrome extension that scrapes data from any website visited and provides relevant data to assist in optimizing search engine optimization journey.
 
 Technology Stack
