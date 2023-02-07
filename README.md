@@ -9,11 +9,11 @@ Google Chrome browser
 Basic knowledge of HTML, CSS and JavaScript
 
 ## Steps
-1.) Download and extract the project files.
-2.) Open Google Chrome and navigate to chrome://extensions/.
-3.) Turn on Developer mode in the top right corner of the page.
-4.) Click on Load Unpacked and select the extracted project folder.
-5.) The extension will now be added to your Google Chrome browser.
+1.) Download and extract the project files.  
+2.) Open Google Chrome and navigate to chrome://extensions/.  
+3.) Turn on Developer mode in the top right corner of the page.  
+4.) Click on Load Unpacked and select the extracted project folder.  
+5.) The extension will now be added to your Google Chrome browser.  
 
 ## Dependency Installation
 To install the TailwindCSS dependency, navigate to the project folder and run the following command in your terminal:
