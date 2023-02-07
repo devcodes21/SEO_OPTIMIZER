@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Botpresso SEO Optimizer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="helper.css">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+
+<body class="h-auto window">
+    <div id="test">
+        <div class="text-3xl font-extrabold pl-16 hover:animate-pulse">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 px-4">
+                Botpresso SEO Optimizer
+            </span>
+        </div>
+    </div>
+    <nav class="px-7 py-4 bg-purple-900 text-white text-lg font-semibold ">
+        <ul class="flex">
+            <!-- <a href="" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold ">Home</a> -->
+            <a href="#home" class="hover:text-green-300 transition duration-300 mx-3 cursor pointer nav">Home</a>
+            <a href="#heading" class="hover:text-green-300 transition duration-300 mx-3 cursor pointer nav">Heading</a>
+            <a href="#generalinfo" class="hover:text-green-300 transition duration-300 mx-3 cursor pointer nav">General
+                Info</a>
+            <a href="#links" class=" hover:text-green-300 transition duration-300 mx-3 cursor pointer nav">Links</a>
+            <a href="#aboutus" class=" hover:text-green-300 transition duration-300 mx-3 cursor pointer nav">About
+                us</a>
+        </ul>
+    </nav>
+    <!-- <div id="title"></div> -->
+    <div class="main bg-purple-300 h-auto max-w-xl content home-page pt-2 pl-1 pr-1" id="home">
+        <div class="grid grid-rows-1 gap-y-3">
+            <div class="box-border h-auto w-auto px-4 border-4 rounded-xl border-purple-600 hover:border-purple-800">
+                <p class="text-lg">
+                    <strong>
+                        Title of Website is:
+                    </strong>
+                <div class="text-lg">
+                    <p id="abcd"></p>
+                </div>
+                </p>
+                <p class="text-lg pt-2">
+                    <strong>
+                        Url of Website is:
+                    </strong>
+                <div class="text-base">
+                    <p id="link"></p>
+                </div>
+                </p>
+                <p class="text-lg pt-2">
+                    <strong>
+                        Description of Website is:
+                    </strong>
+                <div class="text-lg">
+                    <p id="description"></p>
+                </div>
+                </p>
+                <p class="text-lg pt-2">
+                    <strong>
+                        Canonical is:
+                    </strong>
+                <div class="text-lg">
+                    <p id="_canonical"></p>
+                </div>
+                </p>
+            </div>
+            <div class="box-border h-auto w-auto px-4 border-4 rounded-xl border-purple-600 hover:border-purple-800">
+                <div class="flex">
+                    <p class="text-lg">
+                        <strong>
+                            Count of words is:
+                        </strong>
+                    <div class="text-lg">
+                        <p id="count_of_word"></p>
+                    </div>
+                    </p>
+                </div>
+                <p class="text-lg">
+                    <strong>
+                        Robot tags are:
+                    </strong>
+                <div class="text-lg">
+                    <p id="robot_tag"></p>
+                </div>
+                </p>
+                </p>
+                <div class="flex">
+                    <p class="text-lg flex">
+                        <strong>
+                            Number of h1 tags are:
+                        </strong>
+                    <div class="text-lg flex">
+                        <p id="h1_count"></p>
+                    </div>
+                    </p>
+                </div>
+                <div class="flex">
+                    <p class="text-lg flex">
+                        <strong>
+                            Number of h2 tags are:
+                        </strong>
+                    <div class="text-lg flex">
+                        <p id="h2_count"></p>
+                    </div>
+                    </p>
+                </div>
+                <div class="flex">
+                    <p class="text-lg flex">
+                        <strong>
+                            Number of h3 tags are:
+                        </strong>
+                    <div class="text-lg flex">
+                        <p id="h3_count"></p>
+                    </div>
+                    </p>
+                </div>
+                <div class="flex">
+                    <p class="text-lg flex">
+                        <strong>
+                            Number of h4 tags are:
+                        </strong>
+                    <div class="text-lg flex">
+                        <p id="h4_count"></p>
+                    </div>
+                    </p>
+                </div>
+                <div class="flex">
+                    <p class="text-lg flex">
+                        <strong>
+                            Number of h5 tags are:
+                        </strong>
+                    <div class="text-lg flex">
+                        <p id="h5_count"></p>
+                    </div>
+                    </p>
+                </div>
+                <div class="flex">
+                    <p class="text-lg flex">
+                        <strong>
+                            Number of total links are:
+                        </strong>
+                    <div class="text-lg flex">
+                        <p id="total_link"></p>
+                    </div>
+                    </p>
+                </div>
+                <div class="flex">
+                    <p class="text-lg flex">
+                        <strong>
+                            Number of internal links are:
+                        </strong>
+                    <div class="text-lg flex">
+                        <p id="internal_link"></p>
+                    </div>
+                    </p>
+                </div>
+                <div class="flex">
+                    <p class="text-lg flex">
+                        <strong>
+                            Number of external links are:
+                        </strong>
+                    <div class="text-lg flex">
+                        <p id="external_link_"></p>
+                    </div>
+                    </p>
+                </div>
+                <div class="flex">
+                    <p class="text-lg flex">
+                        <strong>
+                            Number of images are:
+                        </strong>
+                    <div class="text-lg flex">
+                        <p id="image"></p>
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <p class="text-sm font-serif italic pl-80">Developed by DevanshSharma</p>
+    </div>
+    <div class="content bg-purple-300 h-auto w-auto content pt-2 pl-1 pr-1" id="heading">
+        <div class="text-xl font-bold pl-28">
+            Different Headings are as follows:
+        </div>
+        <div class="grid grid-rows-3 gap-y-3">
+            <div class="box-border h-auto w-auto px-4 border-4 rounded-xl border-purple-600 hover:border-purple-800">
+                <div class="text-lg">
+                    <strong>
+                        H1 statements encountered are:
+                    </strong>
+                    <ul id="helperrr">
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box-border h-auto w-auto px-4 border-4 rounded-xl border-purple-600 hover:border-purple-800">
+                <div class="text-lg">
+                    <strong>
+                        H2 statements encountered are:
+                    </strong>
+                    <ul id="h2_statement">
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box-border h-auto w-auto px-4 border-4 rounded-xl border-purple-600 hover:border-purple-800">
+                <div class="text-lg">
+                    <strong>
+                        H3 statements encountered are:
+                    </strong>
+                    <ul id="h3_statement">
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box-border h-auto w-auto px-4 border-4 rounded-xl border-purple-600 hover:border-purple-800">
+                <div class="text-lg">
+                    <strong>
+                        H4 statements encountered are:
+                    </strong>
+                    <ul id="h4_statement">
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box-border h-auto w-auto px-4 border-4 rounded-xl border-purple-600 hover:border-purple-800">
+                <div class="text-lg">
+                    <strong>
+                        H5 statements encountered are:
+                    </strong>
+                    <ul id="h5_statement">
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content bg-purple-300 h-auto w-auto content pt-2 pl-1 pr-1" id="links">
+        <div class="text-xl font-bold pl-2">
+            Internal links and their anchor values are as follows:
+        </div>
+        <div class="grid grid-rows-1 gap-y-3">
+            <div class="box-border h-auto w-auto px-4 border-4 rounded-xl border-purple-600 hover:border-purple-800">
+                <div class="text-lg">
+                    <ul id="internal_linkkkkk">
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-xl font-bold pl-2">
+                External links and their anchor values are as follows:
+            </div>
+            <div class="box-border h-auto w-auto px-4 border-4 rounded-xl border-purple-600 hover:border-purple-800">
+                <div class="text-lg font-medium">
+                    <ul id="external_linkkkkk">
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="content bg-purple-300 max-h-xl max-w-xl content pt-2 pl-1 pr-1" id="generalinfo">
+        <div class="grid grid-rows-1 gap-y-3">
+            <div
+                class="box-border h-auto w-15 max-w-xl px-4 border-4 rounded-xl border-purple-600 hover:border-purple-800">
+                <div class="flex">
+                    <p class="text-lg">
+                        <strong>
+                            Language of Website is:
+                        </strong>
+                    <div class="text-lg">
+                        <p id="lang"></p>
+                    </div>
+                    </p>
+                </div>
+                <div class="flex">
+                    <p class="text-lg">
+                        <strong>
+                            Host of Website is:
+                        </strong>
+                    <div class="text-lg">
+                        <p id="hoster"></p>
+                    </div>
+                    </p>
+                </div>
+                <div class="flex">
+                    <p class="text-lg">
+                        <strong>
+                            Hostname of Website is:
+                        </strong>
+                    <div class="text-lg">
+                        <p id="hostnamer"></p>
+                    </div>
+                    </p>
+                </div>
+                <div class="flex">
+                    <p class="text-lg">
+                        <strong>
+                            Protocol followed is:
+                        </strong>
+                    <div class="text-lg">
+                        <p id="protocol_followed_here"></p>
+                    </div>
+                    </p>
+                </div>
+                <div class="flex">
+                    <p class="text-lg">
+                        <strong>
+                            Pathname of this website is:
+                        </strong>
+                    <div class="text-lg">
+                        <p id="pathname_of_this"></p>
+                    </div>
+                    </p>
+                </div>
+                <p class="text-lg">
+                    <strong>
+                        Link for the robot.txt:
+                    </strong>
+                <div class="text-lg hover:font-bold">
+                    <p id="roboter"></p>
+                    <a href=roboter></a>
+                </div>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="content bg-purple-300 h-auto max-w-xl content pt-2 pl-1 pr-1" id="aboutus">
+        <div class="grid grid-rows-1 gap-y-3">
+            <div class="box-border h-auto w-auto px-4 border-4 rounded-xl border-purple-600 hover:border-purple-800">
+                <div class="text-2xl pl-44">
+                    <strong>About us</strong>
+                </div>
+                <div class="text-lg font-medium">
+                    A collective full of digital marketing superstars building sustainable growth in traffic
+                    for
+                    businesses across the world. Botpresso started out as a small freelance venture that
+                    rose to become
+                    a problem solving agency, whose primary focus is to move the needle from red to green
+                    using the
+                    power of caffeine and a bot like mentality.
+                </div>
+                <div class="pl-44 pt-3 pb-5">
+                    <a href="https://botpresso.com/get-in-touch/" target="_blank"
+                        class="button  bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 border-b-4 border-purple-700 hover:border-purple-900 rounded">Connect
+                        with us</a>
+                </div>
+                <div class="text-2xl pl-36">
+                    <strong>Meet the founder</strong>
+                </div>
+                <div class="pl-36">
+                    <img class="h-40 w-48 rounded-3xl" src="/Icon/nitin-square.jpg">
+                </div>
+                <div class="text-lg font-medium">
+                    Nitin Manchanda doubles up as the CEO. With vast experience in the SEO industry, he
+                    worked with
+                    global brands including Trivago, Omio, and Flipkart. A common trend across these
+                    international
+                    brands is their durability and ability to build sustainable growth assets in specific
+                    niche markets.
+                    Nitin Manchanda spearheads all our client engagements, articulates the roadmap, and
+                    guides our teams
+                    toward a result-oriented SEO execution process. That’s just a peep into what you get by
+                    working with
+                    Botpresso.
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

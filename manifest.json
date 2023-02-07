@@ -1,0 +1,42 @@
+{
+    "name": "SEO Optimizer",
+    "description": "This extension shall help Search Engine Optimization[SEO] by giving all details of a webpage. Developed By Devansh Sharma",
+    "version": "1.1",
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab",
+        "background",
+        "tabs",
+        "storage"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_title": "Botpresso",
+        "default_icon": "icon/icon3232.png",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "icon/icon1616.png",
+        "32": "icon/icon3232.png",
+        "48": "icon/icon4848.png",
+        "128": "icon/icon128128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "css": [
+                "output.css",
+                "helper.css"
+            ],
+            "js": [
+                "./node_modules/jquery/dist/jquery.min.js",
+                "content.js",
+                "popup.js"
+            ]
+        }
+    ]
+}
